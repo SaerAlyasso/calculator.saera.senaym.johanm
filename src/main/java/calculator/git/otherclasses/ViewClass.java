@@ -22,6 +22,14 @@ import java.awt.event.ActionListener;
  */
 public class ViewClass implements ActionListener{
 
+	BasicMethods bm = new BasicMethods();
+	
+	double firstnum;
+	double secondnum;
+	double result; 
+	String operations; 
+	String answer;
+	
 	private JFrame frame;
 	private JTextField textField = new JTextField();
 	
@@ -229,6 +237,67 @@ public class ViewClass implements ActionListener{
 	 */
 	public void actionPerformed(ActionEvent e) {
 		
+		if(e.getSource()==btn0){
+			firstnum=Double.parseDouble(btn0.getText());
+			textField.setText(""+firstnum); 
+		}
 		
+		if(e.getSource()==btn1){
+			firstnum=Double.parseDouble(btn1.getText());
+			textField.setText(""+firstnum); 
+		}
+		if(e.getSource()==btn2){
+			firstnum=Double.parseDouble(btn2.getText());
+			textField.setText(""+firstnum); 
+		}
+		
+		if(e.getSource()==btn3){
+			firstnum=Double.parseDouble(btn3.getText());
+			textField.setText(""+firstnum); 
+		}
+		
+		if(e.getSource()==btn4){
+			firstnum=Double.parseDouble(btn4.getText());
+			textField.setText(""+firstnum); 
+		}
+		
+		if(e.getSource()==btn5){
+			firstnum=Double.parseDouble(btn5.getText());
+			textField.setText(""+firstnum); 
+		}
+		
+		if(e.getSource()==btn6){
+			firstnum=Double.parseDouble(btn6.getText());
+			textField.setText(""+firstnum); 
+		}
+		
+		if(e.getSource()==btn7){
+			firstnum=Double.parseDouble(btn7.getText());
+			textField.setText(""+firstnum); 
+		}
+		
+		if(e.getSource()==btn8){
+			firstnum=Double.parseDouble(btn8.getText());
+			textField.setText(textField.getText()+firstnum); 
+		}
+		
+		if(e.getSource()==btn9){
+			firstnum=Double.parseDouble(btn9.getText());
+			textField.setText(""+firstnum); 
+		}
+		
+		if(e.getSource()==btnAddition){
+			textField.setText("");
+			operations="+";
+		}
+		
+		if(e.getSource()==btnEqual){
+			
+			secondnum= Double.parseDouble(textField.getText());
+			
+			result = bm.addition(firstnum, secondnum);
+			answer = String.format("%.2f", result); 
+			textField.setText(answer);
+		}
 	}
 }
