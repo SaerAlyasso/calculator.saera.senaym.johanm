@@ -21,7 +21,7 @@ public class BasicMethods implements BasicOperations{
 	 */
 	public double addition(double first, double second) {
 		
-		return 0;
+		return first + second;
 	}
 
 	/**
@@ -32,7 +32,7 @@ public class BasicMethods implements BasicOperations{
 	 */
 	public double subtraction(double first, double second) {
 		
-		return 0;
+		return first - second;
 	}
 	
 	/**
@@ -43,7 +43,7 @@ public class BasicMethods implements BasicOperations{
 	 */
 	public double division(double first, double second) {
 		
-		return 0;
+		return first/second;
 	}
 
 	/**
@@ -54,7 +54,7 @@ public class BasicMethods implements BasicOperations{
 	 */
 	public double multiplication(double first, double second) {
 		
-		return 0;
+		return first*second; 
 	}
 
 }
