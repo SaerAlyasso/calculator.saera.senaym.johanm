@@ -31,7 +31,7 @@ public class AdvancedMethods implements AdvancedOperations{
 	 */
 	public double countPow(double base, double exponent) {
 		
-		return 0;
+		return Math.pow(base, exponent);
 	}
 	
 	/**
@@ -41,7 +41,7 @@ public class AdvancedMethods implements AdvancedOperations{
 	 */
 	public double countAbsolute(double number) {
 		
-		return 0;
+		return Math.abs(number);
 	}
 	
 	/**
@@ -61,7 +61,7 @@ public class AdvancedMethods implements AdvancedOperations{
 	 */
 	public double countSquare(double number) {
 		
-		return 0;
+		return number*number;
 	}
 
 	/**
@@ -72,7 +72,7 @@ public class AdvancedMethods implements AdvancedOperations{
 	 */
 	public double roundNumber(double number) {
 		
-		return 0;
+		return Math.round(number);
 	}
 
 }
