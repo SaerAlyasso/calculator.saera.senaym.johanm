@@ -33,6 +33,7 @@ public class ViewClass implements ActionListener{
 	
 	private JFrame frame;
 	private JTextField textField = new JTextField();
+
 	
 	// First row
 	private JButton btnClear = new JButton("C");
@@ -239,6 +240,7 @@ public class ViewClass implements ActionListener{
 	 * event and its source.
 	 */
 	public void actionPerformed(ActionEvent e) {
+
 		if(e.getSource()==btn0){
 			String clickedNUmber=textField.getText()+btn0.getText();
 			textField.setText(clickedNUmber); 
@@ -365,7 +367,8 @@ public class ViewClass implements ActionListener{
 		
 		if(e.getSource()==btnClear){
 			operations="";
-			textField.setText(null);
+			textField.setText(null); 
+
 
 		}
 		if (e.getSource()==btnFibonacci){
@@ -388,5 +391,9 @@ public class ViewClass implements ActionListener{
 			textField.setText(""+am.roundNumber(number));
 		}
 		
+
+	
+		
 	}
-}
+} 
+
