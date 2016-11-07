@@ -37,7 +37,7 @@ public class AdvancedMethodsTest {
 		
 	
 		for(int i=0; i<50; i++){
-			double number = rand.nextDouble()*100;
+			double number = rand.nextDouble()*100-20;
 			double result = Math.round(number);
 			
 			LOG.info("Testing the method roundNumber with the value "+number);
@@ -54,8 +54,8 @@ public class AdvancedMethodsTest {
 		
 	
 		for(int i=0; i<50; i++){
-			firstNumber = rand.nextDouble()*100;
-			secondNumber = rand.nextDouble()*100;
+			firstNumber = rand.nextDouble()*100-20;
+			secondNumber = rand.nextDouble()*100-20;
 			result = Math.pow(firstNumber, secondNumber);
 			
 			LOG.info("Testing the method countPow with the value "+firstNumber+" and "+ secondNumber);
@@ -70,7 +70,7 @@ public class AdvancedMethodsTest {
 		double result=0.0;
 	
 		for(int i=0; i<50; i++){
-			number = rand.nextDouble()*100;
+			number = rand.nextDouble()*100-20;
 			result = Math.abs(number);
 			
 			LOG.info("Testing the method countAbsolute with the value "+number);
@@ -85,7 +85,7 @@ public class AdvancedMethodsTest {
 		double result=0.0;
 		
 		for(int i=0; i<50; i++){
-			number = rand.nextDouble()*100;
+			number = rand.nextDouble()*100-20;
 			result = Math.sin(number);
 			
 			LOG.info("Testing the method countSin with the value "+number);
@@ -100,7 +100,7 @@ public class AdvancedMethodsTest {
 		double result=0.0;
 		
 		for(int i=0; i<50; i++){
-			number = rand.nextDouble()*100;
+			number = rand.nextDouble()*100-20;
 			result = Math.sqrt(number);
 			
 			LOG.info("Testing the method countSquare with the value "+number);

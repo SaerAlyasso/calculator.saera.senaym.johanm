@@ -51,6 +51,7 @@ public class BasicMethodsTest {
 		double tempResult = 0; 
 		double tempRandomValue2 = 0; 
 		
+		
 		for (int i = 0; i < 50; i++) {
 			tempRandomValue = rnd.nextDouble()+10; 
 			tempRandomValue2 = rnd.nextDouble()+10; 
@@ -58,6 +59,9 @@ public class BasicMethodsTest {
 			LOG.info("Testing the method with: "+ tempRandomValue + tempRandomValue2);
 			assertEquals(bm.division(tempRandomValue, tempRandomValue2), tempResult, 0.0); 
 		}
+		
+		LOG.info("Testing the method with: "+ tempRandomValue + 0);
+		assertEquals(bm.division(tempRandomValue, 0), -1000.0, 0.0);
 	}
 	@Test
 	public void testMultiplication() {

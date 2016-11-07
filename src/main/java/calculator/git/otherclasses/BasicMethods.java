@@ -43,7 +43,13 @@ public class BasicMethods implements BasicOperations{
 	 */
 	public double division(double first, double second) {
 		
-		return first/second;
+		double result=first/second;
+		
+		if(second==0){
+			return -1000.0;
+		}
+		
+		return result;
 	}
 
 	/**
