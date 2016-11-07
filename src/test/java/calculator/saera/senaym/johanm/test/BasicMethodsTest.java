@@ -23,8 +23,8 @@ public class BasicMethodsTest {
 		double tempRandomValue2 = 0; 
 		
 		for(int i = 0; i < 50; i++) {
-			tempRandomValue = rnd.nextDouble()+10;  
-			tempRandomValue = rnd.nextDouble()+10; 
+			tempRandomValue = rnd.nextDouble()*100-20;  
+			tempRandomValue = rnd.nextDouble()*100-20; 
 			tempResult = tempRandomValue + tempRandomValue2;  
 			LOG.info("Testing the method addition with: "+ tempRandomValue + tempRandomValue2);  
 			assertEquals(bm.addition(tempRandomValue, tempRandomValue2), tempResult,0.0);    
@@ -38,8 +38,8 @@ public class BasicMethodsTest {
 		double tempRandomValue2 = 0;  
 		
 		for(int i = 0; i < 50; i++) {
-			tempRandomValue = rnd.nextDouble()+10;
-			tempRandomValue2 = rnd.nextDouble()+10; 
+			tempRandomValue = rnd.nextDouble()*100-20;
+			tempRandomValue2 = rnd.nextDouble()*100-20; 
 			tempResult = tempRandomValue - tempRandomValue2 ;  
 			LOG.info("Testing the method subtraction with: "+ tempRandomValue + tempRandomValue2); 
 			assertEquals(bm.subtraction(tempRandomValue, tempRandomValue2), tempResult,0.0);  
@@ -53,8 +53,8 @@ public class BasicMethodsTest {
 		
 		
 		for (int i = 0; i < 50; i++) {
-			tempRandomValue = rnd.nextDouble()+10; 
-			tempRandomValue2 = rnd.nextDouble()+10; 
+			tempRandomValue = rnd.nextDouble()*100-20; 
+			tempRandomValue2 = rnd.nextDouble()*100-20; 
 			tempResult = tempRandomValue / tempRandomValue2; 
 			LOG.info("Testing the method with: "+ tempRandomValue + tempRandomValue2);
 			assertEquals(bm.division(tempRandomValue, tempRandomValue2), tempResult, 0.0); 
@@ -70,12 +70,12 @@ public class BasicMethodsTest {
 		double tempRandomValue2 = 0; 
 		
 		for (int i = 0; i < 50; i++){
-			tempRandomValue = rnd.nextDouble()+10;
-			tempRandomValue2 = rnd.nextDouble()+10; 
+			tempRandomValue = rnd.nextDouble()*100-20;
+			tempRandomValue2 = rnd.nextDouble()*100-20; 
 			tempResult = tempRandomValue * tempRandomValue2; 
 			LOG.info("Testing the method with: "+ tempRandomValue + tempRandomValue2);
 			assertEquals(bm.multiplication(tempRandomValue, tempRandomValue2), tempResult, 0.0); 
 		}
 	}
-
+ 
 }
