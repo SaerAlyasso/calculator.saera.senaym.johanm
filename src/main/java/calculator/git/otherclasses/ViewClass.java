@@ -23,6 +23,7 @@ import java.awt.event.ActionListener;
 public class ViewClass implements ActionListener{
 
 	BasicMethods bm = new BasicMethods();
+	AdvancedMethods am = new AdvancedMethods();
 	
 	double firstnum;
 	double secondnum;
@@ -38,7 +39,7 @@ public class ViewClass implements ActionListener{
 	private JButton btnClear = new JButton("C");
 	private JButton btnFibonacci = new JButton("Fn");
 	private JButton btnPow = new JButton("x^n");
-	private JButton btnPercent = new JButton("%");
+	private JButton btnSin = new JButton("Sin");
 	private JButton btnAbsolute = new JButton("abs");
 	
 	// Second row
@@ -99,8 +100,8 @@ public class ViewClass implements ActionListener{
 		btnFibonacci.setBounds(66, 35, 50, 50);	
 		btnPow.setFont(new Font("Dialog", Font.BOLD, 7));
 		btnPow.setBounds(122, 35, 50, 50);	
-		btnPercent.setFont(new Font("Dialog", Font.BOLD, 12));
-		btnPercent.setBounds(178, 35, 50, 50);	
+		btnSin.setFont(new Font("Dialog", Font.BOLD, 7));
+		btnSin.setBounds(178, 35, 50, 50);	
 		btnAbsolute.setFont(new Font("Dialog", Font.BOLD, 7));
 		btnAbsolute.setBounds(234, 35, 50, 50);
 		
@@ -161,7 +162,7 @@ public class ViewClass implements ActionListener{
 		frame.getContentPane().add(btnClear);
 		frame.getContentPane().add(btnFibonacci);
 		frame.getContentPane().add(btnPow);
-		frame.getContentPane().add(btnPercent);
+		frame.getContentPane().add(btnSin);
 		frame.getContentPane().add(btnAbsolute);
 		
 		//Adding second row
@@ -201,7 +202,7 @@ public class ViewClass implements ActionListener{
 		btnClear.addActionListener(this);
 		btnFibonacci.addActionListener(this);
 		btnPow.addActionListener(this);
-		btnPercent.addActionListener(this);
+		btnSin.addActionListener(this);
 		btnAbsolute.addActionListener(this);
 		
 		//Second row
@@ -346,10 +347,16 @@ public class ViewClass implements ActionListener{
 				}
 		}
 		
-
+		
+		if(e.getSource()==btnSin){
+			
+			double number = Double.parseDouble(textField.getText());
+			textField.setText(""+am.countSin(number));
+		}
+		
 		if(e.getSource()==btnClear){
 			operations="";
-			textField.setText(null);
+			textField.setText(null); 
 
 
 		}
