@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BasicMethods.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">calculator.git</a> &gt; <a href="index.source.html" class="el_package">calculator.git.otherclasses</a> &gt; <span class="el_source">BasicMethods.java</span></div><h1>BasicMethods.java</h1><pre class="source lang-java linenums">package calculator.git.otherclasses;
+
+import calculator.git.interfaces.BasicOperations;
+
+/**
+ * This class implements BasicOperations
+ * 
+ * @author Saer, Senay, Johan
+ * @version 1.0
+ * @since 2016-11-02
+ *
+ */
+
+<span class="fc" id="L14">public class BasicMethods implements BasicOperations{</span>
+
+	/**
+	 * This method adds two numbers
+	 * @param first takes a double first as parameter
+	 * @param second takes a double second as parameter
+	 * @return first + second;
+	 */
+	public double addition(double first, double second) {
+		
+<span class="fc" id="L24">		return first + second;</span>
+	}
+
+	/**
+	 * This method subtract first from second
+	 * @param first takes a double first as parameter
+	 * @param second takes a double second as parameter
+	 * @return first - second;
+	 */
+	public double subtraction(double first, double second) {
+		
+<span class="fc" id="L35">		return first - second;</span>
+	}
+	
+	/**
+	 * This method divide two numbers
+	 * @param first takes a double first as parameter
+	 * @param second takes a double second as parameter
+	 * @return result
+	 */
+	public double division(double first, double second) {
+		
+<span class="fc" id="L46">		double result=first/second;</span>
+		
+<span class="fc bfc" id="L48" title="All 2 branches covered.">		if(second==0){</span>
+<span class="fc" id="L49">			return -1000.0;</span>
+		}
+		
+<span class="fc" id="L52">		return result;</span>
+	}
+
+	/**
+	 * This method multiply first with second
+	 * @param first takes a double first as parameter
+	 * @param second takes a double second as parameter
+	 * @return first*second;
+	 */
+	public double multiplication(double first, double second) {
+		
+<span class="fc" id="L63">		return first*second; </span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>

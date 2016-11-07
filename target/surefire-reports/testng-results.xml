@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="10" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="891" started-at="2016-11-07T13:38:19Z" finished-at="2016-11-07T13:38:19Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="891" started-at="2016-11-07T13:38:19Z" finished-at="2016-11-07T13:38:19Z">
+      <class name="calculator.saera.senaym.johanm.test.AdvancedMethodsTest">
+        <test-method status="PASS" signature="testCountAbsolute()[pri:0, instance:testCountAbsolute(calculator.saera.senaym.johanm.test.AdvancedMethodsTest)]" name="testCountAbsolute" duration-ms="94" started-at="2016-11-07T14:38:19Z" finished-at="2016-11-07T14:38:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountAbsolute -->
+        <test-method status="PASS" signature="testRoundNumber()[pri:0, instance:testRoundNumber(calculator.saera.senaym.johanm.test.AdvancedMethodsTest)]" name="testRoundNumber" duration-ms="48" started-at="2016-11-07T14:38:19Z" finished-at="2016-11-07T14:38:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRoundNumber -->
+        <test-method status="PASS" signature="testFibonachi()[pri:0, instance:testFibonachi(calculator.saera.senaym.johanm.test.AdvancedMethodsTest)]" name="testFibonachi" duration-ms="49" started-at="2016-11-07T14:38:19Z" finished-at="2016-11-07T14:38:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFibonachi -->
+        <test-method status="PASS" signature="testCountPow()[pri:0, instance:testCountPow(calculator.saera.senaym.johanm.test.AdvancedMethodsTest)]" name="testCountPow" duration-ms="45" started-at="2016-11-07T14:38:19Z" finished-at="2016-11-07T14:38:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountPow -->
+        <test-method status="PASS" signature="testCountSin()[pri:0, instance:testCountSin(calculator.saera.senaym.johanm.test.AdvancedMethodsTest)]" name="testCountSin" duration-ms="32" started-at="2016-11-07T14:38:19Z" finished-at="2016-11-07T14:38:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountSin -->
+        <test-method status="PASS" signature="testCountSquare()[pri:0, instance:testCountSquare(calculator.saera.senaym.johanm.test.AdvancedMethodsTest)]" name="testCountSquare" duration-ms="68" started-at="2016-11-07T14:38:19Z" finished-at="2016-11-07T14:38:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountSquare -->
+      </class> <!-- calculator.saera.senaym.johanm.test.AdvancedMethodsTest -->
+      <class name="calculator.saera.senaym.johanm.test.BasicMethodsTest">
+        <test-method status="PASS" signature="testMultiplication()[pri:0, instance:testMultiplication(calculator.saera.senaym.johanm.test.BasicMethodsTest)]" name="testMultiplication" duration-ms="65" started-at="2016-11-07T14:38:19Z" finished-at="2016-11-07T14:38:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiplication -->
+        <test-method status="PASS" signature="testAddition()[pri:0, instance:testAddition(calculator.saera.senaym.johanm.test.BasicMethodsTest)]" name="testAddition" duration-ms="35" started-at="2016-11-07T14:38:19Z" finished-at="2016-11-07T14:38:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddition -->
+        <test-method status="PASS" signature="testDivision()[pri:0, instance:testDivision(calculator.saera.senaym.johanm.test.BasicMethodsTest)]" name="testDivision" duration-ms="84" started-at="2016-11-07T14:38:19Z" finished-at="2016-11-07T14:38:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivision -->
+        <test-method status="PASS" signature="testSubtraction()[pri:0, instance:testSubtraction(calculator.saera.senaym.johanm.test.BasicMethodsTest)]" name="testSubtraction" duration-ms="88" started-at="2016-11-07T14:38:19Z" finished-at="2016-11-07T14:38:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubtraction -->
+      </class> <!-- calculator.saera.senaym.johanm.test.BasicMethodsTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
