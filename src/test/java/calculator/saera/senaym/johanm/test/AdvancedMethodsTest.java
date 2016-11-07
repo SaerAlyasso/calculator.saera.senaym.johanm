@@ -29,8 +29,13 @@ public class AdvancedMethodsTest {
 			LOG.info("Testing fibonachi with random int " + firstNumber);
 			assertEquals("The result should be: "+ result,  am.fibonacci(firstNumber),result,0.1111);
 		}
+
+	}
+	
+	@Test
+	public void testRoundNumber(){
 		
-		
+	
 		for(int i=0; i<50; i++){
 			double number = rand.nextDouble()*100;
 			double result = Math.round(number);
@@ -38,7 +43,6 @@ public class AdvancedMethodsTest {
 			LOG.info("Testing the method roundNumber with the value "+number);
 			assertEquals("The result should be: "+ result,am.roundNumber(number),result,0.0);
 		}
-		
 	}
 
 }
