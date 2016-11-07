@@ -35,6 +35,7 @@ public class AdvancedMethods implements AdvancedOperations{
 	public double countPow(double base, double exponent) {
 		
 		return Math.pow(base, exponent);
+		
 	}
 	
 	/**
@@ -52,6 +53,7 @@ public class AdvancedMethods implements AdvancedOperations{
 	 * @param number takes number as a parameter
 	 * @return 0
 	 */
+
 	public double countSin(double number) {
 		
 
@@ -61,11 +63,8 @@ public class AdvancedMethods implements AdvancedOperations{
 
 	}
 
-	/**
-	 * This method counts the square of the given number
-	 * @param number takes number as a parameter
-	 * @return 0
-	 */
+
+
 	public double countSquare(double number) {
 		
 		return Math.sqrt(number);
@@ -81,5 +80,9 @@ public class AdvancedMethods implements AdvancedOperations{
 		
 		return Math.round(number);
 	}
+
+	
+
+	
 
 }
