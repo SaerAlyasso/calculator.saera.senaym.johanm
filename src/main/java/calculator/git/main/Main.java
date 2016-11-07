@@ -6,7 +6,7 @@ import calculator.git.otherclasses.ViewClass;
  * This is a calculator program with some basic and
  * advanced operations.
  * 
- * @author Saer, Senay
+ * @author Saer, Senay, Johan
  * @version 1.0
  * @since 2016-11-02
  *

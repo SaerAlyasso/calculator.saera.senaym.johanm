@@ -15,7 +15,7 @@ import java.awt.event.ActionListener;
  * In this class we create a frame , add components to the 
  * frame and actions to the components when they are clicked.
  * 
- * @author Saer, Senay
+ * @author Saer, Senay, Johan
  * @version 1.0
  * @since 2016-11-02
  *

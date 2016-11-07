@@ -5,7 +5,7 @@ import calculator.git.interfaces.AdvancedOperations;
 /**
  * This class implements AdvancedOperations interface.
  * 
- * @author Saer, Senay
+ * @author Saer, Senay, Johan
  * @version 1.0
  * @since 2016-11-02
  *
@@ -15,7 +15,7 @@ public class AdvancedMethods implements AdvancedOperations{
 	/**
 	 * This method counts the fibonacci number
 	 * @param number takes a double number as parameter
-	 * @return 0
+	 * @return fib
 	 */
 	public int fibonacci(int number) {
 		int fib=0;
@@ -30,7 +30,7 @@ public class AdvancedMethods implements AdvancedOperations{
 	 * to the given base
 	 * @param base takes base as first parameter
 	 * @param exponent takes exponent as second parameter
-	 * @return 0
+	 * @return Math.pow(base, exponent);
 	 */
 	public double countPow(double base, double exponent) {
 		
@@ -41,7 +41,7 @@ public class AdvancedMethods implements AdvancedOperations{
 	/**
 	 * This method counts the absolute value of a double
 	 * @param number takes number as a parameter
-	 * @return 0
+	 * @return Math.abs(number);
 	 */
 	public double countAbsolute(double number) {
 		
@@ -51,20 +51,21 @@ public class AdvancedMethods implements AdvancedOperations{
 	/**
 	 * This method counts the percent of the given number
 	 * @param number takes number as a parameter
-	 * @return 0
+	 * @return Math.sin(number);
 	 */
 
 	public double countSin(double number) {
-		
-
-		  
+ 
 
 		return Math.sin(number);
 
 	}
 
 
-
+	/**
+	 * @param number takes a number as parameter
+	 * @return Math.sqrt(number);
+	 */
 	public double countSquare(double number) {
 		
 		return Math.sqrt(number);
@@ -74,7 +75,7 @@ public class AdvancedMethods implements AdvancedOperations{
 	 * This method round the given number to the
 	 * nearest double value
 	 * @param number takes number as a parameter
-	 * @return 0
+	 * @return Math.round(number);
 	 */
 	public double roundNumber(double number) {
 		

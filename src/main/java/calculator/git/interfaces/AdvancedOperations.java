@@ -2,7 +2,7 @@ package calculator.git.interfaces;
 
 /**
  * This interface is implemented bye class AdvancedMethods
- * @author Saer, Senay
+ * @author Saer, Senay, Johan
  * @version 1.0
  * @since 2016-11-02
  *
