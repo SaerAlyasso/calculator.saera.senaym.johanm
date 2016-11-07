@@ -311,6 +311,11 @@ public class ViewClass implements ActionListener{
 			textField.setText("");
 			operations="*";
 		}
+		if(e.getSource()==btnPow){
+			firstnum=Double.parseDouble(textField.getText());
+			textField.setText("");
+			operations="pow";
+		}
 		
 		if(e.getSource()==btnEqual){
 			
@@ -343,6 +348,12 @@ public class ViewClass implements ActionListener{
 				answer = String.format("%.2f", result); 
 				textField.setText(answer);
 				}
+			if(operations.equals("pow")){
+				
+				result = am.countPow(firstnum, secondnum);
+				answer = String.format("%.2f", result); 
+				textField.setText(answer);
+				}
 		}
 		
 		
@@ -357,7 +368,25 @@ public class ViewClass implements ActionListener{
 			textField.setText(null);
 
 		}
-		
+		if (e.getSource()==btnFibonacci){
+			int number = Integer.parseInt(textField.getText());
+			textField.setText(""+am.fibonacci(number));
+		}
+		if(e.getSource()==btnAbsolute){
+			
+			double number = Double.parseDouble (textField.getText());
+			textField.setText(""+am.countAbsolute(number));
+		}
+		if(e.getSource()==btnSquare){
+			
+			double number = Double.parseDouble (textField.getText());
+			textField.setText(""+am.countSquare(number) );
+		}
+		if(e.getSource()==btnRound){
+			
+			double number = Double.parseDouble (textField.getText());
+			textField.setText(""+am.roundNumber(number));
+		}
 		
 	}
 }
