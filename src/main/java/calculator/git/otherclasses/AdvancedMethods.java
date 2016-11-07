@@ -52,9 +52,9 @@ public class AdvancedMethods implements AdvancedOperations{
 	 * @param number takes number as a parameter
 	 * @return 0
 	 */
-	public double countPercent(double number) {
+	public double countSin(double number) {
 		
-		return 0;
+		return Math.sin(number);
 	}
 
 	/**
@@ -64,7 +64,7 @@ public class AdvancedMethods implements AdvancedOperations{
 	 */
 	public double countSquare(double number) {
 		
-		return number*number;
+		return Math.sqrt(number);
 	}
 
 	/**
