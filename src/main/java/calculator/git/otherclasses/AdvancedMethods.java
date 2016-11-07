@@ -54,11 +54,11 @@ public class AdvancedMethods implements AdvancedOperations{
 	 */
 	public double countSin(double number) {
 		
-<<<<<<< HEAD
-		return number;  
-=======
+
+		  
+
 		return Math.sin(number);
->>>>>>> master
+
 	}
 
 	/**
