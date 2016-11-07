@@ -14,7 +14,7 @@ public interface AdvancedOperations {
 	public int fibonacci(int number);
 	public double countPow(double base, double exponent);
 	public double countAbsolute(double number);
-	public double countPercent(double number);
+	public double countSin(double number);
 	public double countSquare(double number);
 	public double roundNumber(double number);
 		

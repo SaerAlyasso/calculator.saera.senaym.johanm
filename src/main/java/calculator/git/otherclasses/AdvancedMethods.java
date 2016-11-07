@@ -53,14 +53,18 @@ public class AdvancedMethods implements AdvancedOperations{
 	 * @param number takes number as a parameter
 	 * @return 0
 	 */
-	
 
-	/**
-	 * This method counts the square of the given number
-	 * @param number takes number as a parameter
-	 * @return 0
-	 */
-	
+	public double countSin(double number) {
+		
+		return Math.sin(number);
+	}
+
+
+
+	public double countSquare(double number) {
+		
+		return Math.sqrt(number);
+	}
 
 	/**
 	 * This method round the given number to the
@@ -73,14 +77,8 @@ public class AdvancedMethods implements AdvancedOperations{
 		return Math.round(number);
 	}
 
-	public double countPercent(double number) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+	
 
-	public double countSquare(double number) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+	
 
 }
