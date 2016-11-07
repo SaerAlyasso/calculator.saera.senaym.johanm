@@ -22,15 +22,17 @@ import java.awt.event.ActionListener;
  */
 public class ViewClass implements ActionListener{
 
-	private JFrame frame;
-	private JTextField textField = new JTextField();
+	BasicMethods bm = new BasicMethods();
 	
 	double firstnum;
 	double secondnum;
 	double result; 
 	String operations; 
 	String answer;
-	int switchStatement; 
+	
+	private JFrame frame;
+	private JTextField textField = new JTextField();
+
 	
 	// First row
 	private JButton btnClear = new JButton("C");
@@ -87,6 +89,8 @@ public class ViewClass implements ActionListener{
 		
 		textField.setBounds(10, 2, 275, 31);
 		textField.setColumns(10);
+		textField.setEnabled(false);
+		textField.setHorizontalAlignment(JTextField.RIGHT);
 
 		// First row
 		btnClear.setFont(new Font("Dialog", Font.BOLD, 12));
@@ -235,118 +239,122 @@ public class ViewClass implements ActionListener{
 	 * event and its source.
 	 */
 	public void actionPerformed(ActionEvent e) {
-		BasicMethods bm = new BasicMethods(); 
-		
+
 		if(e.getSource()==btn0){
-			firstnum=Double.parseDouble(btn0.getText());
-			textField.setText(""+firstnum);
-			textField.setText(""); 
-			secondnum = Double.parseDouble(btn0.getText()); 
-			textField.setText(""+secondnum);   
+			String clickedNUmber=textField.getText()+btn0.getText();
+			textField.setText(clickedNUmber); 
 		}
 		
-		if(e.getSource()==btn1){//btnEqual---> 
-			firstnum=Double.parseDouble(btn1.getText());
-			textField.setText(""+firstnum);
-			textField.setText(""); 
-			secondnum = Double.parseDouble(btn1.getText()); 
-			textField.setText(""+secondnum);   
-		
-		}// btn1<---
+		if(e.getSource()==btn1){
+			String clickedNUmber=textField.getText()+btn1.getText();
+			textField.setText(clickedNUmber); 
+		}
 		if(e.getSource()==btn2){
-			firstnum=Double.parseDouble(btn2.getText());
-			textField.setText(""+firstnum); 
+			String clickedNUmber=textField.getText()+btn2.getText();
+			textField.setText(clickedNUmber);  
 		}
 		
 		if(e.getSource()==btn3){
-			firstnum=Double.parseDouble(btn3.getText());
-			textField.setText(""+firstnum); 
+			String clickedNUmber=textField.getText()+btn3.getText();
+			textField.setText(clickedNUmber);  
 		}
 		
 		if(e.getSource()==btn4){
-			firstnum=Double.parseDouble(btn4.getText());
-			textField.setText(""+firstnum); 
+			String clickedNUmber=textField.getText()+btn4.getText();
+			textField.setText(clickedNUmber);  
 		}
 		
 		if(e.getSource()==btn5){
-			firstnum=Double.parseDouble(btn5.getText());
-			textField.setText(""+firstnum); 
+			String clickedNUmber=textField.getText()+btn5.getText();
+			textField.setText(clickedNUmber);  
 		}
 		
 		if(e.getSource()==btn6){
-			firstnum=Double.parseDouble(btn6.getText());
-			textField.setText(""+firstnum); 
+			String clickedNUmber=textField.getText()+btn6.getText();
+			textField.setText(clickedNUmber);  
 		}
 		
 		if(e.getSource()==btn7){
-			firstnum=Double.parseDouble(btn7.getText());
-			textField.setText(""+firstnum); 
+			String clickedNUmber=textField.getText()+btn7.getText();
+			textField.setText(clickedNUmber);  
 		}
 		
 		if(e.getSource()==btn8){
-			firstnum=Double.parseDouble(btn8.getText());
-			textField.setText(textField.getText()+firstnum); 
+			String clickedNUmber=textField.getText()+btn8.getText();
+			textField.setText(clickedNUmber);  
 		}
 		
 		if(e.getSource()==btn9){
-			firstnum=Double.parseDouble(btn9.getText());
-			textField.setText(""+firstnum); 
+			String clickedNUmber=textField.getText()+btn9.getText();
+			textField.setText(clickedNUmber);  
 		}
 		
 		if(e.getSource()==btnAddition){
+			firstnum=Double.parseDouble(textField.getText());
 			textField.setText("");
-			operations = "+"; 
+			operations="+";
 		}
 		
 		if(e.getSource()==btnSubtraction){
+			firstnum=Double.parseDouble(textField.getText());
 			textField.setText("");
 			operations="-";
 		}
 		
-		if(e.getSource()==btnEqual){
-				 
-				secondnum= Double.parseDouble(textField.getText());
-				
-				result = bm.addition(firstnum, secondnum);
-				answer = String.format("%2B", result); 
-				textField.setText(answer);    
+		if(e.getSource()==btnDivision){
+			firstnum=Double.parseDouble(textField.getText());
+			textField.setText("");
+			operations="/";
 		}
-		switchStatement = 4; 
 		
-		switch (switchStatement) {
-			case 1: {
-				secondnum= Double.parseDouble(textField.getText());
-				
-				result = bm.addition(firstnum, secondnum);
-				answer = String.format("%2f", result); 
-				textField.setText(answer);    
-				
-			}
-			case 2: {
-				textField.setText(""); 
-				secondnum = Double.parseDouble(textField.getText()); 
-				
-				result = bm.subtraction(firstnum, secondnum);  
-				answer = String.format("%2f", result); 
-				textField.setText(answer);
-			}
-			case 3: {
-				textField.setText(""); 
-				secondnum = Double.parseDouble(textField.getText()); 
-				
-				result = bm.multiplication(firstnum, secondnum); 
-				answer = String.format("%2f", result); 
-				textField.setText(answer); 
-			}
-		/*	case 4: {
-				textField.setText(""); 
-				secondnum = Double.parseDouble(textField.getText()); 
-				
-				result = bm.division(firstnum, secondnum); 
-				answer = String.format("%2f", result); 
-				textField.setText(answer);
-			}*/ 
+		if(e.getSource()==btnMultiplication){
+			firstnum=Double.parseDouble(textField.getText());
+			textField.setText("");
+			operations="*";
 		}
+		
+		if(e.getSource()==btnEqual){
+			
+			secondnum= Double.parseDouble(textField.getText());
+			
+			if(operations.equals("+")){
+				
+			result = bm.addition(firstnum, secondnum);
+			answer = String.format("%.2f", result); 
+			textField.setText(answer);
+			}
+			
+			if(operations.equals("*")){
+				
+				result = bm.multiplication(firstnum, secondnum);
+				answer = String.format("%.2f", result); 
+				textField.setText(answer);
+				}
+			
+			if(operations.equals("/")){
+				
+				result = bm.division(firstnum, secondnum);
+				answer = String.format("%.2f", result); 
+				textField.setText(answer);
+				}
+			
+			if(operations.equals("-")){
+				
+				result = bm.subtraction(firstnum, secondnum);
+				answer = String.format("%.2f", result); 
+				textField.setText(answer);
+				}
+		}
+		
+
+		if(e.getSource()==btnClear){
+			operations="";
+			textField.setText(null);
+
+
+		}
+		
+		
 
 	
 		

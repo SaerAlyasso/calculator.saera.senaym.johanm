@@ -18,8 +18,11 @@ public class AdvancedMethods implements AdvancedOperations{
 	 * @return 0
 	 */
 	public int fibonacci(int number) {
-		
-		return 0;
+		int fib=0;
+		if (number==0) 	return 0;
+		if (number<=2) return 1;
+		fib=fibonacci(number-1)+fibonacci(number-2);
+		return fib;
 	}
 
 	/**
@@ -31,7 +34,7 @@ public class AdvancedMethods implements AdvancedOperations{
 	 */
 	public double countPow(double base, double exponent) {
 		
-		return 0;
+		return Math.pow(base, exponent);
 	}
 	
 	/**
@@ -41,7 +44,7 @@ public class AdvancedMethods implements AdvancedOperations{
 	 */
 	public double countAbsolute(double number) {
 		
-		return 0;
+		return Math.abs(number);
 	}
 	
 	/**
@@ -51,7 +54,7 @@ public class AdvancedMethods implements AdvancedOperations{
 	 */
 	public double countPercent(double number) {
 		
-		return 0;
+		return number;  
 	}
 
 	/**
@@ -61,7 +64,7 @@ public class AdvancedMethods implements AdvancedOperations{
 	 */
 	public double countSquare(double number) {
 		
-		return 0;
+		return number*number;
 	}
 
 	/**
@@ -72,7 +75,7 @@ public class AdvancedMethods implements AdvancedOperations{
 	 */
 	public double roundNumber(double number) {
 		
-		return 0;
+		return Math.round(number);
 	}
 
 }
