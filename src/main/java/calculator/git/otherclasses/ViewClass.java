@@ -351,13 +351,6 @@ public class ViewClass implements ActionListener{
 
 		}
 		
-		if(e.getSource()==btnEqual){
-			
-			secondnum= Double.parseDouble(textField.getText());
-			
-			result = bm.addition(firstnum, secondnum);
-			answer = String.format("%.2f", result); 
-			textField.setText(answer);
-		}
+		
 	}
 }
